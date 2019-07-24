@@ -1,0 +1,14 @@
+name: Collectibles
+version: 1.0-SNAPSHOT
+main: io.github.hotlava03.collectibles.Collectibles
+authors: [HotLava03]
+description: Collectibles viewer and giver
+commands:
+  collectibles:
+    description: Open the collectibles menu
+    aliases: [coll, col]
+permissions:
+  collectibles.view:
+    description: View the collectibles menu.
+  collectibles.admin:
+    description: Give a user a selected collectible.
