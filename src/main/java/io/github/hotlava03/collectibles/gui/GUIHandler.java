@@ -145,7 +145,7 @@ public class GUIHandler implements Listener {
 
         if (slot.getItemMeta().getLore() == null
                 && (slot.getItemMeta().getDisplayName().equals("\u00a7aNext page")
-                        || (slot.getItemMeta().getDisplayName().equals("\u00a7cPrevious page")))
+                || (slot.getItemMeta().getDisplayName().equals("\u00a7cPrevious page")))
         )
             return;
 
@@ -274,7 +274,11 @@ public class GUIHandler implements Listener {
         if (getAllCollectibles() == null)
             return;
 
-        menu.clear();
+        Inventory menu = Bukkit.createInventory(
+                null,
+                54,
+                config.getString("server") + "'s collectibles"
+        );
 
         for (int i = 1; i <= amountPages; i++) {
             int j = 0;

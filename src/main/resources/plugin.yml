@@ -1,12 +1,30 @@
 name: Collectibles
-version: @version@
+version: "1.1"
 main: io.github.hotlava03.collectibles.Collectibles
 authors: [HotLava03]
-description: Collectibles viewer and giver
+description: Collectibles viewer and giver, item meta editor
 commands:
   collectibles:
     description: Open the collectibles menu
     aliases: [coll, col]
+  addlore:
+    description: Add a lore to the item in your hand.
+    aliases: [addl, alore, loreadd, al, ladd, addl]
+  addloreline:
+    description: Add a lore line to the item in your hand.
+    aliases: [addll, aloreline]
+  setdisplayname:
+    description: Set the display name for the item in your hand.
+    aliases: [setdname, setname]
+  addenchant:
+    description: Add an enchant with level to the item in your hand.
+    aliases: [addench]
+  addflag:
+    description: Add an item flag to the item in your hand
+    aliases: [additemflag, flagadd, itemflag]
+  setunbreakable:
+    description: Set the current item in hand unbreakable
+    aliases: [unbreakable]
 permissions:
   collectibles.view:
     description: View the collectibles menu.

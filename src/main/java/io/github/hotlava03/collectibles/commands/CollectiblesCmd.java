@@ -37,7 +37,7 @@ public class CollectiblesCmd implements CommandExecutor {
                 plugin.reload();
                 player.sendMessage(Colors.fixCodes("&aSuccess &8&l\u00BB &7Reloaded the configuration files."));
             }else {
-                player.sendMessage(Colors.fixCodes("&6Collectibles &8&l\u00BB &7Collectibles &f1.0-SNAPSHOT &7by &fHotLava03&7."));
+                player.sendMessage(Colors.fixCodes("&6Collectibles &8&l\u00BB &7Collectibles &f1.1 &7by &fHotLava03&7."));
             }
             return true;
         }

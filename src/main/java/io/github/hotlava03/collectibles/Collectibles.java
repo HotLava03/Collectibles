@@ -1,6 +1,6 @@
 package io.github.hotlava03.collectibles;
 
-import io.github.hotlava03.collectibles.commands.CollectiblesCmd;
+import io.github.hotlava03.collectibles.commands.*;
 import io.github.hotlava03.collectibles.gui.GUIHandler;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -32,6 +32,12 @@ public final class Collectibles extends JavaPlugin {
 
         this.getServer().getPluginManager().registerEvents(new GUIHandler(this, null), this);
         this.getCommand("collectibles").setExecutor(new CollectiblesCmd(this));
+        this.getCommand("addlore").setExecutor(new AddLoreCmd());
+        this.getCommand("addloreline").setExecutor(new AddLoreLineCmd());
+        this.getCommand("setdisplayname").setExecutor(new SetDisplayNameCmd());
+        this.getCommand("addenchant").setExecutor(new AddEnchCmd());
+        this.getCommand("addflag").setExecutor(new AddFlagCmd());
+        this.getCommand("setunbreakable").setExecutor(new SetUnbreakableCmd());
     }
 
     public void reload() {
